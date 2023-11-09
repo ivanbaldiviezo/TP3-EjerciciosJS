@@ -6,18 +6,18 @@ function calcularPerimetro(lado1, lado2) {
 }
 
 var lado1 = parseFloat(
-  prompt('Ingrese el valor del primer lado del rectángulo:')
+  prompt("Ingrese el valor del primer lado del rectángulo:")
 );
 var lado2 = parseFloat(
-  prompt('Ingrese el valor del segundo lado del rectángulo:')
+  prompt("Ingrese el valor del segundo lado del rectángulo:")
 );
 
 //verificar si se ingresaron numeros
 if (isNaN(lado1) || isNaN(lado2)) {
-  alert('Por favor, ingrese valores numéricos');
+  alert("Por favor, ingrese valores numéricos");
 } else {
   //calcular el perímetro
   var perimetro = calcularPerimetro(lado1, lado2);
 
-  document.write('El perímetro del rectángulo es: ' + perimetro);
+  document.write("El perímetro del rectángulo es: " + perimetro);
 }
